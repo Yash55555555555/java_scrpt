@@ -46,7 +46,7 @@ const users = [
         email: "h@gmail.com"
     }
 ]
-console.log(users[2].email)
+// console.log(users[2].email)
 
 
 
@@ -55,3 +55,19 @@ console.log(users[2].email)
 // console.log(Object.entries(tinderUser));
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+
+
+// ----> lets understand destructuring of objects
+
+const course = {
+    coursename : "java script",
+    price : "999",
+    course_instructor :  "hitesh"
+}
+// console.log(course["course_instructor"]);
+ 
+
+// this is how you can do this==> destructuring
+const {price, coursename} = course
+console.log(price);
